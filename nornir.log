@@ -1,0 +1,19 @@
+2021-05-03 18:12:02,900 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip int br'} on 2 hosts
+2021-05-03 18:12:56,497 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run'} on 2 hosts
+2021-05-04 17:17:07,342 -  nornir.core -  WARNING -        run() - Task 'netmiko_send_command' has not been run – 0 hosts selected
+2021-05-04 17:17:34,796 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip int br'} on 1 hosts
+2021-05-04 17:20:02,548 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'config_commands': ['interface GigabitEthernet0/1', 'description Description set with Nornir Netmiko']} on 2 hosts
+2021-05-04 17:20:02,549 - nornir.core.task -    ERROR -      start() - Host 'R01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/alistair/Nornir3/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: netmiko_send_command() missing 1 required positional argument: 'command_string'
+
+2021-05-04 17:20:02,549 - nornir.core.task -    ERROR -      start() - Host 'R02': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/alistair/Nornir3/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: netmiko_send_command() missing 1 required positional argument: 'command_string'
+
+2021-05-04 17:21:14,558 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface GigabitEthernet0/1', 'description Description set with Nornir Netmiko']} on 2 hosts
+2021-05-04 17:25:03,182 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['ntp server 1.1.1.1']} on 2 hosts

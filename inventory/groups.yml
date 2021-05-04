@@ -1,0 +1,6 @@
+---
+CML: 
+  data: 
+    ntp: 
+      servers: 
+        - 1.1.1.1
